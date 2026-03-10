@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ShopEase — Your one-stop destination for electronics, fashion, home and sports products at unbeatable prices.">
+  <title>ShopEase — Modern E-commerce Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container nav-top">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">Shop<span>Ease</span></span>
+      </a>
+
+      <!-- Search Bar -->
+      <form class="nav-search" action="products.html" method="GET">
+        <select name="category" aria-label="Search category">
+          <option value="">All</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Home">Home</option>
+          <option value="Sports">Sports</option>
+        </select>
+        <input type="text" name="search" placeholder="Search products, brands, and more..." aria-label="Search products">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="login.html" class="nav-link">
+          <small>Hello, Sign in</small>
+          Account
+        </a>
+        <a href="products.html" class="nav-link">
+          <small>Browse</small>
+          Products
+        </a>
+        <a href="cart.html" class="nav-link cart-link">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-badge" style="display:none;">0</span>
+          Cart
+        </a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <div class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <!-- Sub-navigation -->
+    <div class="nav-sub">
+      <div class="container nav-sub-links">
+        <a href="products.html">All Products</a>
+        <a href="products.html?search=electronics">Electronics</a>
+        <a href="products.html?search=fashion">Fashion</a>
+        <a href="products.html?search=home">Home & Kitchen</a>
+        <a href="products.html?search=sports">Sports</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400&h=600&fit=crop');"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Discover <span>Amazing</span> Products at Unbeatable Prices</h1>
+        <p>Shop the latest trends in electronics, fashion, home essentials and sports gear. Fast delivery, easy returns, and 24/7 customer support.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="products.html" class="btn btn-primary btn-lg">Shop Now →</a>
+          <a href="#deals" class="btn btn-outline btn-lg">View Deals</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <h3>10K+</h3>
+            <p>Products</p>
+          </div>
+          <div class="hero-stat">
+            <h3>50K+</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div class="hero-stat">
+            <h3>99%</h3>
+            <p>Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="categories-grid">
+        <a href="products.html?search=electronics" class="category-card">
+          <span class="cat-icon">💻</span>
+          <h3>Electronics</h3>
+          <p>Headphones, Watches & more</p>
+        </a>
+        <a href="products.html?search=fashion" class="category-card">
+          <span class="cat-icon">👕</span>
+          <h3>Fashion</h3>
+          <p>Jackets, Shoes & Accessories</p>
+        </a>
+        <a href="products.html?search=home" class="category-card">
+          <span class="cat-icon">🏠</span>
+          <h3>Home & Kitchen</h3>
+          <p>Bottles, Coffee Makers & more</p>
+        </a>
+        <a href="products.html?search=sports" class="category-card">
+          <span class="cat-icon">⚽</span>
+          <h3>Sports & Fitness</h3>
+          <p>Shoes, Yoga Mats & Gear</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <span class="cat-icon">🎒</span>
+          <h3>Accessories</h3>
+          <p>Bags, Chargers & more</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMO BANNER ===== -->
+  <section class="section" id="deals" style="padding-top:0;">
+    <div class="container">
+      <div class="promo-banner">
+        <div>
+          <h3>🔥 Mega Sale — Up to 40% Off!</h3>
+          <p>Don't miss our biggest sale of the season. Limited-time offers on top brands.</p>
+        </div>
+        <a href="products.html" class="btn btn-secondary btn-lg">Shop the Sale →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRENDING PRODUCTS ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <h2 class="section-title">Trending Products</h2>
+      <div class="products-grid" id="trendingGrid">
+        <!-- Populated by JS -->
+      </div>
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="products.html" class="btn btn-outline btn-lg">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES BAR ===== -->
+  <section class="section" style="background: var(--bg-card); padding: var(--sp-2xl) 0;">
+    <div class="container">
+      <div class="categories-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+        <div class="category-card" style="border: none; box-shadow: none;">
+          <span class="cat-icon">🚚</span>
+          <h3>Free Delivery</h3>
+          <p>On orders above $50</p>
+        </div>
+        <div class="category-card" style="border: none; box-shadow: none;">
+          <span class="cat-icon">🔄</span>
+          <h3>Easy Returns</h3>
+          <p>30-day return policy</p>
+        </div>
+        <div class="category-card" style="border: none; box-shadow: none;">
+          <span class="cat-icon">🔒</span>
+          <h3>Secure Payment</h3>
+          <p>100% secure checkout</p>
+        </div>
+        <div class="category-card" style="border: none; box-shadow: none;">
+          <span class="cat-icon">💬</span>
+          <h3>24/7 Support</h3>
+          <p>Round the clock assistance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-col">
+        <h4>About ShopEase</h4>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Returns</a>
+        <a href="#">Shipping Info</a>
+        <a href="#">Track Order</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="products.html">All Products</a>
+        <a href="cart.html">My Cart</a>
+        <a href="login.html">My Account</a>
+        <a href="#">Wishlist</a>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for exclusive deals and updates.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed successfully! 🎉');">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 ShopEase. All rights reserved. Built for educational purposes.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">📘</a>
+        <a href="#" title="Twitter">🐦</a>
+        <a href="#" title="Instagram">📷</a>
+        <a href="#" title="YouTube">🎬</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script>
+    // Render top 4 trending products on home page
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('trendingGrid');
+      if (!grid) return;
+
+      // Pick 4 top-rated products
+      const trending = [...products]
+        .sort((a, b) => b.rating - a.rating)
+        .slice(0, 4);
+
+      trending.forEach(product => {
+        const discount = getDiscount(product.originalPrice, product.price);
+        const badgeHTML = product.badge ? `<span class="badge">${product.badge}</span>` : '';
+
+        grid.innerHTML += `
+          <div class="product-card animate-fade-in">
+            ${badgeHTML}
+            <div class="product-img">
+              <img src="${product.image}" alt="${product.name}" loading="lazy">
+              <div class="product-actions">
+                <button onclick="addToCart(${product.id})" title="Add to Cart">🛒</button>
+                <button onclick="window.location.href='product-details.html?id=${product.id}'" title="Quick View">👁</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">${product.category}</span>
+              <h3 class="product-title">
+                <a href="product-details.html?id=${product.id}">${product.name}</a>
+              </h3>
+              <div class="product-rating">
+                <span class="stars">${renderStars(product.rating)}</span>
+                <span class="rating-count">(${product.reviews.toLocaleString()})</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$${product.price.toFixed(2)}</span>
+                <span class="price-original">$${product.originalPrice.toFixed(2)}</span>
+                <span class="price-discount">${discount}% off</span>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    });
+  </script>
+
+</body>
+</html>
