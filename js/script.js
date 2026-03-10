@@ -146,7 +146,7 @@ const products = [
     category: "Electronics",
     price: 29.99,
     originalPrice: 44.99,
-    image: "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=400&h=400&fit=crop",
+    image: "https://search.brave.com/images?q=Fast+Wireless+Charging+Pad+hd+image&context=W3sic3JjIjoiaHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNDFnaXJUcElJRUwuX0FDLl9TUjE4MCwyMzAuanBnIiwidGV4dCI6IlplYnJvbmljcyAyLWluLTEgV2lyZWxlc3MgQ2hhcmdpbmcgUGFkIHdpdGggMzBXIE91dHB1dCwgRmFzdCBDaGFyZ2luZywgQnVpbHQtaW4gUHJvdGVjdGlvbiwgRm9yZWlnbiBPYmplY3QgRGV0ZWN0aW9uLCAxbSBUeXBlLUMgQ2FibGUsIGZvciBXaXJlbGVzcyBFYXJidWRzICZhbXA7IFNtYXJ0cGhvbmVzLCBUZXh0dXJlIEZpbmlzaCAoV0NQIDIxNSkiLCJwYWdlX3VybCI6Imh0dHBzOi8vd3d3LmFtYXpvbi5pbi9JbmR1Y3Rpb24tQ2hhcmdlcnMvYj9pZT1VVEY4Jm5vZGU9MTM4OTQxMzAzMSJ9XQ%3D%3D&sig=9bdd54a1daeb43bd51db56384a9ccbe0790127aa71f2d7083bf6f39a7b343743&nonce=fdacb57e93063fc60752b5dd099851e2",
     rating: 4.2,
     reviews: 983,
     description: "15W fast wireless charging pad compatible with all Qi-enabled devices. Ultra-slim design with intelligent safety features including temperature control and foreign object detection.",
